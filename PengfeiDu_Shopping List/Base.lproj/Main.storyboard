@@ -17,16 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFv-8C-om2">
-                                <rect key="frame" x="16" y="67" width="358" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="linkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-N2-RKW" userLabel="List Name">
-                                <rect key="frame" x="14" y="119" width="360" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-N2-RKW" userLabel="List Name">
+                                <rect key="frame" x="15" y="119" width="360" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter New List Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgM-sH-VgB" userLabel="Enter New List Name">
                                         <rect key="frame" x="8" y="15" width="352" height="31"/>
@@ -43,6 +35,9 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="UPn-ow-xyw"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="3"/>
@@ -55,9 +50,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xam-zX-kbO" userLabel="Items">
-                                <rect key="frame" x="14" y="236" width="360" height="414"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xam-zX-kbO" userLabel="Items">
+                                <rect key="frame" x="15" y="236" width="360" height="414"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6b-hr-b8Y">
                                         <rect key="frame" x="237" y="8" width="200" height="40"/>
@@ -232,6 +226,9 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="414" id="y1c-xx-wRU"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="3"/>
@@ -244,9 +241,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glP-ZX-V9w">
-                                <rect key="frame" x="59" y="667" width="94" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glP-ZX-V9w">
+                                <rect key="frame" x="60" y="667" width="94" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="DwZ-Id-uN4"/>
+                                    <constraint firstAttribute="height" constant="51" id="HfB-BO-htP"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
@@ -265,9 +265,12 @@
                                     <action selector="Save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deg-1S-pZ4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-pl-lYd">
-                                <rect key="frame" x="237" y="667" width="94" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-pl-lYd">
+                                <rect key="frame" x="236" y="667" width="94" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="VRJ-iP-OE1"/>
+                                    <constraint firstAttribute="height" constant="51" id="qMo-jo-j2z"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
@@ -286,9 +289,30 @@
                                     <action selector="Cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ktl-t2-afJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFv-8C-om2">
+                                <rect key="frame" x="15" y="67" width="360" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="glP-ZX-V9w" firstAttribute="top" secondItem="xam-zX-kbO" secondAttribute="bottom" constant="17" id="8hu-0n-ldA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DV6-N2-RKW" secondAttribute="trailing" constant="15" id="C0A-k0-zUb"/>
+                            <constraint firstItem="dFv-8C-om2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="C3A-bS-5ks"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dFv-8C-om2" secondAttribute="trailing" constant="15" id="CM2-Sn-Ka9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xam-zX-kbO" secondAttribute="trailing" constant="15" id="JLn-ku-P6o"/>
+                            <constraint firstItem="glP-ZX-V9w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="T5A-Ll-fHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YCW-pl-lYd" secondAttribute="trailing" constant="60" id="Wfh-SS-jAo"/>
+                            <constraint firstItem="DV6-N2-RKW" firstAttribute="top" secondItem="dFv-8C-om2" secondAttribute="bottom" constant="16" id="ZWq-LH-gbX"/>
+                            <constraint firstItem="dFv-8C-om2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fHj-fZ-nzu"/>
+                            <constraint firstItem="xam-zX-kbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="gM2-fn-JmQ"/>
+                            <constraint firstItem="xam-zX-kbO" firstAttribute="top" secondItem="DV6-N2-RKW" secondAttribute="bottom" constant="12" id="hao-CN-WPk"/>
+                            <constraint firstItem="DV6-N2-RKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="qdi-DQ-uoZ"/>
+                            <constraint firstItem="YCW-pl-lYd" firstAttribute="top" secondItem="xam-zX-kbO" secondAttribute="bottom" constant="17" id="rxT-fU-JdW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="uiView1" destination="8bC-Xf-vdC" id="0Ju-v7-HyL"/>
